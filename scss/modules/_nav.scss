@@ -1,0 +1,28 @@
+// ==========================================================================
+// Nav
+// ==========================================================================
+
+// No fancy nesting here for better readability
+
+.nav {
+	margin-top: em(20px);
+	margin-bottom: em(30px);
+	
+	@include e(item) {
+		@extend %nav-item-horz;
+		@include m(current) {
+			@extend %nav-item-horz;
+			a {
+				@extend %nav-item-link;
+				@extend %nav-item-on;
+			}
+		}
+		a {
+			@extend %nav-item-link;
+			color: palette(grey);
+			&:hover {
+				@extend %nav-item-on;
+			}
+		}
+	}
+}

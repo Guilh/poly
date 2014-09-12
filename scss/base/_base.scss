@@ -1,0 +1,116 @@
+// ==========================================================================
+// Base Styles
+// ==========================================================================
+
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	color: palette(grey);
+  font-size: $base__font-size;
+  font-family: $font-family--primary;
+  line-height: ($base__line/$base__font-size);
+}
+
+// Text
+
+h1 {
+	@extend %hdln-prim;
+}
+
+h2 {
+	@extend %hdln-sec;
+}
+
+h3 {
+	font-size: em(18px);
+}
+
+h4 {
+	@include mq(medium) {
+		margin-top: em(42px);
+	}
+	margin-top: em(22px);
+	margin-bottom: em(36px, 14px);
+	color: palette(grey, x-light);
+	text-transform: uppercase;
+	letter-spacing: $letter-space;
+	font-weight: $font-weight--medium;
+	font-size: em(14px);
+}
+
+a {
+	color: palette(grey, dark); 
+	text-decoration: none;
+	font-weight: $font-weight--medium;
+}
+
+p {
+	margin: 0 0 em(30px, 18px);
+	font-weight: $font-weight--light;
+	font-size: em(18px);
+	line-height: (27px/18px);
+}
+
+blockquote {
+	@include mq(medium) {
+		margin: em(32px, 24px) 0;
+		padding: 0 0 0 5%;
+		border-left: em(8px, 24px) solid palette(grey, xx-light); 
+		font-size: em(24px);
+	}
+	font-weight: $font-weight--light;
+	font-style : italic;
+	font-size : em(20px);
+}
+
+// Lists
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+// Images
+
+img {
+  margin-bottom: em(24px);
+  max-width: 100%;
+  height: auto;
+}
+
+// Form elements
+
+input, 
+textarea {
+	display: block;
+	padding: 15px;
+	width: 100%; 
+	outline: 0;
+	border: 0;
+}
+
+input:focus, 
+textarea:focus {
+	transition: $trns_duration;
+}
+
+// Button
+
+button {
+	outline: 0;
+}
+
+// Footer
+
+footer {
+	border-top: 1px solid palette(grey, xx-light);
+	p {
+		font-size: em(16px);
+		margin-top: em(22px, 16px);
+	}
+}

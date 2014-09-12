@@ -1,0 +1,40 @@
+// ==========================================================================
+// Grid Columns
+// ==========================================================================
+
+// Generates grid columns
+
+.grid__col {
+	@include mq(medium) {
+		@include g-columns;
+	}
+}
+
+// Column styles
+
+[class^="grid__col--"] {
+	@include mq(small)  { 
+		margin-top: em(12px);
+		margin-bottom: em(12px);
+	}
+	@include mq(medium) { 
+		@include doubly(percentage($g-gutter-width / $context));
+		float: left;
+		min-height: 1px;
+		padding-left: 10px;
+		padding-right: 10px;
+		&:last-of-type {
+			float: right;
+		}
+	}
+}
+
+// Poly Grid display
+
+.theme__poly {
+	.grid [class*="grid__col"] {
+  	font-weight: $font-weight--thin;
+		margin-bottom: em(16px);
+		padding: 1.75%;
+	}
+}

@@ -1,0 +1,29 @@
+// ==========================================================================
+// Progress Bars
+// ==========================================================================
+
+.progbar {
+	@include e(status) {
+		@include ui-colors($ui-colors, el);
+	}
+	height: 4px;
+	border-radius: 2px;
+	background: palette(grey, x-light);
+	position: relative;
+	margin-bottom: em(46px);
+}
+
+// Classes that begin with progbar__
+
+[class^="progbar__"] {
+	@include p-el(after, 20px, 20px) {
+		border-radius: $br--round;
+		right: -10px;
+		top: -8px;
+	}
+	display: block;
+	width: 50%;
+	height: 100%;
+	border-radius: inherit;
+	position: relative;
+}

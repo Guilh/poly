@@ -1,0 +1,97 @@
+// ==========================================================================
+// Global Config
+// ==========================================================================
+
+// Font Stacks
+
+$font-url--google        : 'http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900';
+$font-family--primary    : 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--secondary  : 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Font Weights
+
+$font-weight--thin       : 100;
+$font-weight--light      : 300;
+$font-weight--medium     : 400;
+$font-weight--bold       : 700;
+$font-weight--ultra-bold : 900;
+
+// Descriptive Base Colors
+
+$white : #fff;
+$black : #0b0b0b;
+$grey  : #797e83;
+
+$fountain-blue  : #52bab3;
+$emerald        : #5ece7f;
+$sunglo         : #e67478;
+$coral          : #ff784f;
+$purple-majesty : #9279c3;
+$scooter        : #39add1;
+
+// Color Usage
+
+$color-primary   : $fountain-blue;
+$color-secondary : $scooter;
+$color-accent    : $emerald;
+$color-shadow    : rgba($black, .2);
+
+// Color Palette Modifiers
+
+$color-palettes: (
+	grey: (
+		xx-light : lighten($grey, 43%),
+		x-light  : lighten($grey, 35%),
+	  light    : lighten($grey, 12%),
+	  base     : $grey,
+	 	dark     : darken($grey, 8%),
+	 	x-dark   : darken($grey, 16%)
+	),
+	black: (
+		light    : lighten($black, 10%),
+		base     : $black,
+		dark     : darken($black, 10%)
+	)
+);
+
+// UI Colors
+
+$ui-colors: (
+	default : $fountain-blue,
+	success : $emerald,
+	error   : $sunglo,
+	warning : $coral,
+	info    : $purple-majesty
+);
+
+// Text
+
+$base__font-size : 16px;
+$base__line      : 24px;
+$letter-space    : 1px;
+
+// Border radius
+
+$br--default    : .4em;
+$br--round      : 50%;
+
+// Transitions
+
+$trns-duration  : .3s;
+
+// Path to Assets
+
+$path--rel      : "../img";
+
+// Grid
+
+$g-col-width    : 65px !default;
+$g-gutter-width : 20px !default;
+$g-col-count    : 12 !default;
+$g-cont-max-w   : 1050px !default;
+
+// Breakpoints
+
+$brkpoint--sm    : 1px;
+$brkpoint--md    : 768px;
+$brkpoint--lg    : 1100px;

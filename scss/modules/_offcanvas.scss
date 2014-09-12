@@ -1,0 +1,11 @@
+// ==========================================================================
+// Offcanvas
+// ==========================================================================
+
+.offcanvas {
+	position: relative;
+	padding: em(10px);
+	letter-spacing: $letter-space;
+	background: $color-secondary;
+	background: linear-gradient(45deg, rgba($color-accent,.8) 0%,$color-secondary 100%);
+}
