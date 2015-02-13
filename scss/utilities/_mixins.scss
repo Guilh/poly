@@ -5,7 +5,7 @@
 // BEM selectors
 
 @mixin e($element) {
-	&__#{$element} {
+  &__#{$element} {
     @content;
   }
 }
@@ -33,16 +33,16 @@
       @content;
     }
   }
-   @else {
-   	@error "No value could be retrieved for `#{$break}`. "
+  @else {
+    @error "No value could be retrieved for `#{$break}`. "
   }
 }
 
 // Generate modifier color classes
 
 @mixin ui-colors($map, $p-el:null) {
-	@each $theme, $color in $map {
-  	@include m($theme) {
+  @each $theme, $color in $map {
+    @include m($theme) {
       background-color: $color;
 
       // If an $p-el value is passed, generate pseudo-element bg colors. Used on progbars.
@@ -52,26 +52,26 @@
         } 
       }
     }
-	}
+  }
 }
 
 // Generating :before or :after pseudo-element shapes
 
 @mixin p-el(
-	$el,
-	$el-w: null,
-	$el-h: null) {
-	@if $el == "before" or $el == "after" { 
-	  &:#{$el} {
-		  @extend %pseudos;
-		  width: $el-w;
-	  	height: $el-h;
-	    @content;
-	  }
-	} 
-	@else {
-    @error "`#{$el}` is not a valid pseudo-element.";
-	}
+  $el,
+  $el-w: null,
+  $el-h: null) {
+    @if $el == "before" or $el == "after" {
+      &:#{$el} {
+       @extend %pseudos;
+       width: $el-w;
+       height: $el-h;
+       @content;
+     }
+   } 
+   @else {
+     @error "`#{$el}` is not a valid pseudo-element.";
+   }
 }
 
 // Image replacement
@@ -87,10 +87,10 @@
 // Adjacent sibling margins
 
 @mixin doubly($margin: 1em) {
-	& + & {
-	  margin-left: $margin;
-    @content;
-	}
+  & + & {
+   margin-left: $margin;
+   @content;
+  }
 }
 
 // Grid columns
