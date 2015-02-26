@@ -3,15 +3,15 @@
 // ==========================================================================
 
 .is-displayed-mobile {
-	@include mq(small) {
-		display: block;
-		@at-root (with: media) {
-			.is-hidden-mobile {
-				display: none;
-			}
-		}
-	}
-	@include mq(medium) {
-		display: none;
-	}	
+  @include mq(small) {
+    display: block;
+    @at-root (with: media) {
+      .is-hidden-mobile {
+	display: none;
+       }
+     }
+  }
+  @include mq(medium) { 
+    display: none;
+  }	
 }
