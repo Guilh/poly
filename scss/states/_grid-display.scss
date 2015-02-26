@@ -8,8 +8,8 @@
     @at-root (with: media) {
       .is-hidden-mobile {
 	display: none;
-       }
-     }
+      }
+    }
   }
   @include mq(medium) { 
     display: none;
