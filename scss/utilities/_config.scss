@@ -39,29 +39,29 @@ $color-shadow    : rgba($black, .2);
 // Color Palette Modifiers
 
 $color-palettes: (
-	grey: (
-		xx-light : lighten($grey, 43%),
-		x-light  : lighten($grey, 35%),
-	  light    : lighten($grey, 12%),
-	  base     : $grey,
-	 	dark     : darken($grey, 8%),
-	 	x-dark   : darken($grey, 16%)
-	),
-	black: (
-		light    : lighten($black, 10%),
-		base     : $black,
-		dark     : darken($black, 10%)
-	)
+  grey: (
+    xx-light : lighten($grey, 43%),
+    x-light  : lighten($grey, 35%),
+    light    : lighten($grey, 12%),
+    base     : $grey,
+    dark     : darken($grey, 8%),
+    x-dark   : darken($grey, 16%)
+  ),
+  black: (
+    light    : lighten($black, 10%),
+    base     : $black,
+    dark     : darken($black, 10%)
+  )
 );
 
 // UI Colors
 
 $ui-colors: (
-	default : $fountain-blue,
-	success : $emerald,
-	error   : $sunglo,
-	warning : $coral,
-	info    : $purple-majesty
+  default : $fountain-blue,
+  success : $emerald,
+  error   : $sunglo,
+  warning : $coral,
+  info    : $purple-majesty
 );
 
 // Text
