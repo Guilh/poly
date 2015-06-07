@@ -11,12 +11,12 @@
   @extend %center-align;
   margin-bottom: em(20px, 14px); 
   @include mq(small) {
-  	width: 100%;
+    width: 100%;
   }
   @include mq(medium) {
+    @include doubly(20px);
     width: auto;
     display: inline-block;
-		@include doubly(20px);
   }
 }
 
